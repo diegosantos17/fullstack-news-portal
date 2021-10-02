@@ -19,7 +19,7 @@ export class NewsService {
   }
 
   getById(id: string): Observable<BaseResponse<News>> {
-    return this.http.get<BaseResponse<News>>(`${this.baseUrl}${id}`);
+    return this.http.get<BaseResponse<News>>(`${this.baseUrl}/${id}`);
   }
 }
 
