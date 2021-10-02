@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'fullstack-news-potal'`, () => {
+  it(`should have as title 'fullstack-news-portal'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('fullstack-news-potal');
+    expect(app.title).toEqual('fullstack-news-portal');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('fullstack-news-potal app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('fullstack-news-portal app is running!');
   });
 });

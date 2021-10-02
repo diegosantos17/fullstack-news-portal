@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "fullstack-news-potal": {
+    "fullstack-news-portal": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/fullstack-news-potal",
+            "outputPath": "dist/fullstack-news-portal",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "fullstack-news-potal:build:production"
+              "browserTarget": "fullstack-news-portal:build:production"
             },
             "development": {
-              "browserTarget": "fullstack-news-potal:build:development"
+              "browserTarget": "fullstack-news-portal:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "fullstack-news-potal:build"
+            "browserTarget": "fullstack-news-portal:build"
           }
         },
         "test": {
@@ -103,5 +103,5 @@
       }
     }
   },
-  "defaultProject": "fullstack-news-potal"
+  "defaultProject": "fullstack-news-portal"
 }
